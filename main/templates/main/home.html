@@ -1,0 +1,68 @@
+<!-- templates/main/home.html -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>인체 무해 담배 스타트업</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <!-- Header 메뉴바 -->
+    {% include 'partials/navbar.html' %}
+
+    <!-- 메인 콘텐츠 -->
+    <!-- 제품 소개 슬라이드 섹션 -->
+    <section class="product-slider">
+        <div class="slider">
+            <div class="slides">
+                <img src="{% static 'main/slider_items/product1.jpg' %}" class="slide active">
+                <img src="{% static 'main/slider_items/product2.jpg' %}" class="slide">
+                <img src="{% static 'main/slider_items/product3.png' %}" class="slide">
+            </div>
+            <button class="prev">←</button>
+            <button class="next">→</button>
+        </div>
+    </section>
+
+    <!-- 최근 소식 섹션 -->
+    <section class="news-section">
+        <h2>최근 소식</h2>
+        <div class="news-container">
+            <article class="news-item">
+                <h3>인체 무해 담배 기술 개발 성공</h3>
+                <p>2025년, 새로운 혁신 기술 개발에 성공하여 시장 진입을 준비하고 있습니다.</p>
+            </article>
+            <article class="news-item">
+                <h3>스타트업 투자 유치 완료</h3>
+                <p>투자 라운드에서 50억 원 규모의 투자를 성공적으로 유치하였습니다.</p>
+            </article>
+            <article class="news-item">
+                <h3>제품 출시일 공개</h3>
+                <p>최초의 인체 무해 담배 제품이 다음 달 출시됩니다.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- 기술 소개 섹션 -->
+    <section class="tech-section">
+        <h2>우리의 기술</h2>
+        <p>
+            우리의 기술은 흡연자의 건강을 보호하면서도 담배의 특성과 즐거움을 유지하는 독보적인 혁신입니다.
+        </p>
+        <a href="#" class="btn">자세히 보기</a>
+    </section>
+
+    <header class="hero-section">
+        <h1>인체에 무해한 담배, 새로운 혁신의 시작</h1>
+        <p>우리의 목표는 흡연의 유해성을 제거하여 모두의 건강을 지키는 것입니다.</p>
+        <a class="btn" href="#">더 알아보기</a>
+    </header>
+
+    <!-- Footer Contact 영역 -->
+    {% include 'partials/footer.html' %}
+    
+    <script type="module" src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
