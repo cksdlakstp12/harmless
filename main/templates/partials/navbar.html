@@ -17,21 +17,25 @@
             </ul>
         </li>
         <li class="menu-item">
-            <a href="{% url 'customer_board' %}">Assistance</a>
+            <a href="{% url 'funding' %}">Funding</a>
             <ul class="submenu">
-                <li><a href="{% url 'customer_board' %}">기술소개</a></li>
-                <li><a href="{% url 'technology' %}">특허</a></li>
+                <li><a href="{% url 'funding' %}">펀딩 현황</a></li>
+                <li><a href="{% url 'go2fund' %}">펀딩하러 가기</a></li>
             </ul>
         </li>
         <li class="menu-item">
-            <a href="{% url 'Funding' %}">Funding</a>
+            <a href="{% url 'customer_board' %}">Assistance</a>
             <ul class="submenu">
-                <li><a href="{% url 'Funding' %}">펀딩 현황</a></li>
-                <li><a href="{% url 'Funding' %}">펀딩하러 가기기</a></li>
+                <li><a href="{% url 'customer_board' %}">고객 센터</a></li>
+                <li><a href="{% url 'review' %}">후기</a></li>
             </ul>
         </li>
         <li class="menu-item">
             <a href="{% url 'login' %}">Login</a>
+            <ul class="submenu">
+                <li><a href="{% url 'login' %}">로그인</a></li>
+                <li><a href="{% url 'mypage' %}">마이페이지</a></li>
+                <li><a href="{% url 'signin' %}">회원가입</a></li>
         </li>
     </ul>
 </nav>

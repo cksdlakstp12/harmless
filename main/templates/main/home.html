@@ -7,24 +7,15 @@
     <meta charset="UTF-8">
     <title>인체 무해 담배 스타트업</title>
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/slider.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- Header 메뉴바 -->
     {% include 'partials/navbar.html' %}
 
     <!-- 메인 콘텐츠 -->
-    <!-- 제품 소개 슬라이드 섹션 -->
-    <section class="product-slider">
-        <div class="slider">
-            <div class="slides">
-                <img src="{% static 'main/slider_items/product1.jpg' %}" class="slide active">
-                <img src="{% static 'main/slider_items/product2.jpg' %}" class="slide">
-                <img src="{% static 'main/slider_items/product3.png' %}" class="slide">
-            </div>
-            <button class="prev">←</button>
-            <button class="next">→</button>
-        </div>
-    </section>
 
     <!-- 최근 소식 섹션 -->
     <section class="news-section">

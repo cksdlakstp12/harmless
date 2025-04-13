@@ -5,8 +5,9 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'main/home.html')
 
+
 def company_introduction(request):
-    return render(request, 'about/company_introduction.html')
+    return render(request, 'about/introduction.html')
 
 def vision(request):
     return render(request, 'about/vision.html')
@@ -14,17 +15,34 @@ def vision(request):
 def people(request):
     return render(request, 'about/people.html')
 
+
 def product_introduction(request):
-    return render(request, 'product/product_introduction.html')
+    return render(request, 'product/introduction.html')
 
 def purchase(request):
     return render(request, 'product/purchase.html')
 
-def innovation(request):
-    return render(request, 'main/innovation.html')
 
-def careers(request):
-    return render(request, 'main/careers.html')
+def funding(request):
+    return render(request, 'funding/funding.html')
 
-def contact(request):
-    return render(request, 'main/contact.html')
+def go2fund(request):
+    return render(request, 'funding/go2fund.html')
+
+
+def customer_board(request):
+    return render(request, 'assistance/customer_board.html')
+
+def review(request):
+    return render(request, 'assistance/review.html')
+
+
+def login(request):
+    return render(request, 'account/login.html')
+
+def mypage(request):
+    return render(request, 'account/mypage.html')
+
+def signin(request):
+    return render(request, 'account/signin.html')
+

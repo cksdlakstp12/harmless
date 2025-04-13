@@ -197,46 +197,6 @@ header p {
     font-size: 0.8em;
 }
 
-/* 제품 슬라이드 섹션 */
-.product-slider {
-    padding: 100px 0;
-    text-align: center;
-    background: #efefef;
-}
-
-.slider {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.slides img {
-    width: 100%;
-    display: none;
-    border-radius: 10px;
-}
-
-.slides img.active {
-    display: block;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    background-color: rgba(0,0,0,0.2);
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 5px 15px;
-    border-radius: 50%;
-}
-
-.prev { left: -50px; }
-.next { right: -50px; }
-
 /* 최근 소식 섹션 */
 .news-section {
     padding: 100px 20px;

@@ -18,13 +18,21 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),  # 홈페이지
+
     path('about/', views.company_introduction, name='company_introduction'),
     path('about/', views.vision, name='vision'),
     path('about/', views.people, name='people'),
+
     path('product/', views.product_introduction, name='product_introduction'),
     path('product/', views.purchase, name='purchase'),
-    path('technology/', views.technology, name='technology'),
-    path('innovation/', views.innovation, name='innovation'),
-    path('careers/', views.careers, name='careers'),
-    path('contact/', views.contact, name='contact'),
+
+    path('funding/', views.funding, name='funding'),
+    path('funding/', views.go2fund, name='go2fund'),
+
+    path('assistance/', views.customer_board, name='customer_board'),
+    path('assistance/', views.review, name='review'),
+
+    path('account/', views.login, name='login'),
+    path('account/', views.mypage, name='mypage'),
+    path('account/', views.signin, name='signin'),
 ]
